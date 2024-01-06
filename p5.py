@@ -1,4 +1,10 @@
-#Write a program to store a list of first names of students. Count the occurrences of'a'within the list
-name=['kichu','sanam','minnu','saira']
-for i in name:
-    print("'a' occurs in",i,"-",i.count('a'),"times")
+import os
+os.chdir("/home/mca/Desktop/SURAJ-MCA/PYTHON/C05")
+f=open("abc.txt","w")
+seq=("first line\n","second line\n","third line\n")
+f.writelines(seq)
+f.close()
+f=open("abc.txt","r")
+line=f.readlines()
+print("Line :",line)
+f.close()
